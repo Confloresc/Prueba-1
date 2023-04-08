@@ -3,6 +3,17 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+h1 {
+  font-size: 4vh;
+}
+h2 {
+  font-size: 3vh;
+}
+p,
+.cargaobra {
+  font-size: 3vmin;
+}
+
 #principal {
   background-image: url("../img/texturafondo.jpg");
   background-repeat: no-repeat;
