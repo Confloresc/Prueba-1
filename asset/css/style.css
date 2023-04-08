@@ -20,7 +20,8 @@ body {
   text-align: start;
 }
 .tituloseccion1,
-.tituloseccion2 {
+.tituloseccion2,
+.descripcion {
   margin-bottom: 5%;
   text-align: justify;
 }
