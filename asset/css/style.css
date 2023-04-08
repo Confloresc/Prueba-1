@@ -9,6 +9,7 @@ body {
 
 .novedadh3 {
   margin-bottom: 3%;
+  text-align: start;
 }
 .tituloseccion1,
 .tituloseccion2 {
@@ -18,4 +19,18 @@ body {
 
 p {
   font-weight: 300;
+}
+
+footer {
+  margin-top: 15%;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+.linkfooter {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
 }
