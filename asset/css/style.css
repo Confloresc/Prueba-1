@@ -1,0 +1,36 @@
+body {
+  margin: 0%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.imgseccion2 {
+  max-width: 100%;
+}
+
+.novedadh3 {
+  margin-bottom: 3%;
+  text-align: start;
+}
+.tituloseccion1,
+.tituloseccion2 {
+  margin-bottom: 5%;
+  text-align: justify;
+}
+
+p {
+  font-weight: 300;
+}
+
+footer {
+  margin-top: 15%;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+.linkfooter {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
