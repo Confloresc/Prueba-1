@@ -34,3 +34,37 @@ hr.solid {
   color: black;
   font-weight: 500;
 }
+
+.title-login{
+  width: 100%;
+  text-align: center;
+}
+
+.login{
+  margin-top: 2%;   
+  margin-left: 20%;  
+  margin-right: 20%; 
+  margin-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  border-style: solid;
+  border-width: 1px;
+ }
+ .btn-login{
+  background-color: gray;
+  border-color: gray;
+  margin-left: 45%;
+ }
+
+ .bodyContacto{
+  box-sizing: border-box;
+ }
+
+ .form-contact{
+  float: left;
+  padding: 1%;
+ }
+
+ 
