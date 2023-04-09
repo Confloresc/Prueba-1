@@ -1,0 +1,96 @@
+body {
+  margin: 0%;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 4vh;
+}
+h2 {
+  font-size: 3vh;
+}
+p,
+.cargaobra {
+  font-size: 3vmin;
+}
+
+#principal {
+  background-image: url("../img/texturafondo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: transparent;
+}
+
+.imgseccion2 {
+  max-width: 100%;
+}
+
+.novedadh3 {
+  margin-bottom: 3%;
+  text-align: start;
+}
+.tituloseccion1,
+.tituloseccion2,
+.descripcion {
+  margin-bottom: 5%;
+  text-align: justify;
+}
+
+p {
+  font-weight: 300;
+}
+
+footer {
+  margin-top: 15%;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+.linkfooter {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.title-login {
+  width: 100%;
+  text-align: center;
+}
+
+.login {
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+.btn-login {
+  background-color: gray;
+  border-color: gray;
+  margin-left: 45%;
+}
+
+.bodyContacto {
+  box-sizing: border-box;
+}
+
+.form-contact {
+  float: left;
+  padding: 1%;
+}
+.btn-contacto {
+  background-color: gray;
+  border-color: gray;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+.card {
+  border-color: transparent;
+}
