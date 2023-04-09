@@ -4,14 +4,14 @@ body {
 }
 
 h1 {
-  font-size: 4vh;
+  font-size: 6vh;
 }
 h2 {
-  font-size: 3vh;
+  font-size: 4vh;
 }
 p,
 .cargaobra {
-  font-size: 3vmin;
+  font-size: 2vmin;
 }
 
 #principal {
@@ -92,5 +92,6 @@ hr.solid {
 }
 
 .card {
+  background-color: transparent;
   border-color: transparent;
 }
