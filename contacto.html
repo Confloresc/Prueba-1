@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GRUPO CERO</title>
+    <title>Contacto</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
@@ -15,8 +15,7 @@
   <link rel="stylesheet" href="asset/css/style.css">
 
 </head>
-
-<body id="principal">
+<body class="bodyContacto">
 
   <!--Barra de navegación-->
 
@@ -70,7 +69,7 @@
     </div>
   </nav>
 
-  <div class="title-login container mt-5">
+<div class="title-login">
     <h3>Contacto</h3>
     <p>¿Eres artista? Escríbenos y envíanos tu portafolio. Nosotros lo revisaremos y
       nos pondremos en contacto contigo para que puedas participar de nuestra galería
@@ -79,24 +78,24 @@
   </div>
 
   <!--Contacto-->
-  <div class="login form-contact bg-light rounded shadow-sm">
+<div class="login form-contact bg-light rounded shadow-sm"> 
     <form>
-      <div class="form-row-inline form-contact">
-        <div class="col-6 form-contact">
-          <input type="text" class="form-control form-control-contact" placeholder="Nombre">
-        </div>
-        <div class="col-6 form-contact">
-          <input type="text" class="form-control form-control-contact" placeholder="Apellido">
-        </div>
-        <div class="col-12 form-contact">
-          <input type="email" class="form-control form-control-contact" placeholder="Correo">
-        </div>
-        <div class="col-12 form-contact">
-          <p>Consulta:</p>
-          <textarea id="w3review" name="w3review" rows="5" cols="78"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-contacto">Enviar</button>
-      </div>
+        <div class="form-row form-contact">
+          <div class="form-contact-box1 form-contact">
+            <input type="text" class="form-control form-control-contact" placeholder="Nombre">
+          </div>
+          <div class="form-contact-box1 form-contact">
+            <input type="text" class="form-control form-control-contact" placeholder="Apellido">
+          </div>
+          <div class="form-contact-box2 form-contact">
+            <input type="email" class="form-control form-control-contact" placeholder="Correo">
+          </div>
+          <div class="form-contact-box2 form-contact">
+            <p>Consulta:</p>
+            <textarea id="w3review" name="w3review" class="form-contact-box2"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-contacto">Enviar</button>
+        </div>        
     </form>
   </div>
 </body>
