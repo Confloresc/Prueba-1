@@ -11,7 +11,7 @@ h2 {
 }
 
 h4 {
-  font-size: 3vh;
+  font-size: 2vh;
 }
 
 p,
@@ -94,12 +94,6 @@ hr.solid {
   border-color: gray;
   padding-right: 2%;
   padding-left: 2%;
-}
-
-.btn-VER {
--btn-padding-y: 100%;
--btn-padding-x:  10%;
--btn-font-size: XL;
 }
 
 .card {
