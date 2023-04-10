@@ -9,6 +9,11 @@ h1 {
 h2 {
   font-size: 4vh;
 }
+
+h4 {
+  font-size: 2vh;
+}
+
 p,
 .cargaobra {
   font-size: 2vmin;
@@ -145,6 +150,17 @@ hr.solid {
   width: 25%;
   padding-top: 0%;
  }
+
+
+
+
+ .card{
+  background-color: transparent;
+  border-color: transparent;
+}
+
+
+
 
 
  @media only screen and (max-width: 768px) {
