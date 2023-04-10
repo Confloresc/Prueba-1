@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalle Producto</title>
+    <title>GRUPO CERO</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
@@ -12,7 +12,8 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/dc663d69b4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="asset/css/style.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body class="bodyProducto">
 
@@ -69,11 +70,33 @@
 
  
 <div class="container-producto-1">
+  <div class="sub-container-producto-1">
+  <!--Carrusel-->
 
-    <div class="sub-container-producto-1">
-        <img src="asset/img/escultura/es1/es-1-1.png" class="img-fluid img-producto">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="asset/img/escultura/es1/es-1-1.png" class="d-block w-100" alt="...">
+        
+      </div>
+      <div class="carousel-item">
+        <img src="asset/img/escultura/es1/es-1-2.png" class="d-block w-100" alt="...">
+        
+      </div>
+     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
 
-    </div>
+
+  
 
     <div class="sub-container-producto-2">
         <table class="table">
@@ -93,6 +116,10 @@
                 <td>Monalisa</td>                
               </tr>
               <tr>
+                <th scope="row">Categoria:</th>
+                <td>Escultura</td>                
+              </tr>
+              <tr>
                 <th scope="row">año:</th>
                 <td>2020</td>
               </tr>
@@ -102,37 +129,37 @@
                     Sint odio, alias reiciendis tempore ea delectus nulla obcaecati 
                     accusantium ipsa quia, tempora corporis incidunt. Nostrum cupiditate
                      assumenda eum iusto quaerat minima?</td>
-              </tr>
+              </tr>              
             </tbody>
           </table>
-
+          <button type="submit" class="btn btn-secondary">Agregar al Carro</button>  
     </div>
 
+  </div>
 
-</div>
 
 <div class="container-producto-1">
 
     <div class="title-producto">
-        <h1>Otras Obras del Artista</h1>
+        <h1>Otras Obras</h1>
 
     </div>
 
     <div class="sub-container-img">
         <div class="sub-container-img-1">
-            <img src="asset/img/escultura/es1/es-1-1.png" class="img-fluid img-producto-1">
+            <img src="asset/img/pintura/p1/p1 principal.png" class="img-fluid img-producto-1">
     
         </div>
         <div class="sub-container-img-1">
-            <img src="asset/img/escultura/es1/es-1-1.png" class="img-fluid img-producto-1">
+            <img src="asset/img/tejido/tejido 3/t3-2.png" class="img-fluid img-producto-1">
     
         </div>
         <div class="sub-container-img-1">
-            <img src="asset/img/escultura/es1/es-1-1.png" class="img-fluid img-producto-1">
+            <img src="asset/img/orfebrería/collar/collar1.png" class="img-fluid img-producto-1">
     
         </div>
         <div class="sub-container-img-1">
-            <img src="asset/img/escultura/es1/es-1-1.png" class="img-fluid img-producto-1">
+            <img src="asset/img/orfebrería/aretes/a1.png" class="img-fluid img-producto-1">
     
         </div>
 
