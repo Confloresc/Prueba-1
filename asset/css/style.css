@@ -104,29 +104,23 @@ hr.solid {
   float: left;
   width: 100%;
   padding-left: 5%;
-  padding-top: 5%;
+  padding-top: 0%;
   padding-right: 5%;
-  padding-bottom: 5%;
-  
+  padding-bottom: 2%;  
  }
 
  .sub-container-producto-1{
   float: left;
-  width: 40%;  
-  
+  width: 40%; 
+  padding: 5%;
+  padding-top: 1%;
  }
 
  .sub-container-producto-2{
   float: left;
   width: 60%;  
   padding-left: 3%;
-  padding-top: 3%;
-  
- }
-
- .img-producto{
-  width: 25em;
-  height: 25em;
+  padding-top: 3%;  
  }
 
  .title-producto{
@@ -146,6 +140,12 @@ hr.solid {
   padding-left: 3%;
   padding-top: 3%;
  }
+
+ .sub-container-img-1:hover{  
+  width: 25%;
+  padding-top: 0%;
+ }
+
 
  @media only screen and (max-width: 768px) {
   /* For mobile phones: */
