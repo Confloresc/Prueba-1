@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRUPO CERO</title>
+  <title>GRUPO CERO</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
@@ -15,13 +15,14 @@
   <link rel="stylesheet" href="asset/css/style.css">
 
 </head>
-<body class="bodyContacto">
+
+<body id="principal">
 
   <!--Barra de navegación-->
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand logo" href="#">
+      <a class="navbar-brand logo" href="./index.html">
         <img src="./asset/img/LOGO.png" alt="Logo" width="30" height="30" class="d-inline-block">
         Grupo Cero
       </a>
@@ -31,9 +32,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-          </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Categorias
@@ -57,26 +55,32 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <input class="form-control me-3" type="search" placeholder="Buscar" aria-label="Search">
         </form>
         <nav class="navbar bg-body-tertiary">
           <div>
             <a href="login.html"><button class="btn btn-outline-secondary" type="submit">Iniciar Sesion</button></a>
-            <button class="btn btn-secondary" type="submit">Registrarse</button>
+            <button class="btn btn-secondary me-3" type="submit">Registrarse</button>
           </div>
+
+          <a class="navbar-brand Carro" href="./index.html">
+            <img src="./asset/img/carrito.png" alt="Carro" width="35" height="35" class="d-inline-block">
+             
+          </a>
         </nav>
       </div>
     </div>
   </nav>
-
+  <div class="container-producto-1">
 <div class="title-login">
-    <h3>Contacto</h3>
+    <h1>CONTACTO</h1>
+    <p> </p>
     <p>¿Eres artista? Escríbenos y envíanos tu portafolio. Nosotros lo revisaremos y
       nos pondremos en contacto contigo para que puedas participar de nuestra galería
       de arte.En caso de consultas o requerimientos con respecto a la compra tambien
       puedes escribirnos.</p>
   </div>
-
+</div>
   <!--Contacto-->
 <div class="login form-contact bg-light rounded shadow-sm"> 
     <form>
@@ -127,6 +131,7 @@
     </div>
   </div>
   <hr class="solid">
+  
   <!-- Grid container -->
   <div class="container pt-4  col-lg-6 px-5">
     <!-- Section: Social media -->
