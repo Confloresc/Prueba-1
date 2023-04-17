@@ -83,16 +83,19 @@
   </div>
 
   <!--Login-->
+  
   <div class="login bg-light rounded shadow-sm">
     <form action="index.html" method="post">
-      <div class="mb-3">
 
+      <div class="mb-3">
         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo"
           aria-describedby="emailHelp">
       </div>
+
       <div class="mb-3">
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+        <input maxlength="8" minlength="8" type="password" class="form-control" id="pwd" placeholder="Ingresa tu Contraseña" name="pswd" required pattern="[a-zA-Z]+[0-9]+">
       </div>
+
       <button class=" btn btn-secondary" type="submit">Log In</button>
       </form>
   </div>

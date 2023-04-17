@@ -13,8 +13,9 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/dc663d69b4.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="asset/css/style.css">
-
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
 
 <body id="principal">
 
@@ -82,139 +83,133 @@
   </div>
 
   <!--Login-->
+
   <div class="login bg-light rounded shadow-sm">
-    <form class="row g-3">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Ingresa tu Mail</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Agrega tu Contraseña</label>
-          <input type="password" class="form-control" id="inputPassword4">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Dirección</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="......">
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">Región</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">Comuna</label>
-          <select id="inputState" class="form-select">
-            <option selected>.....</option>
-            <option>...</option>
-          </select>
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Recibir información de nuevos productos
-            </label>
-          </div>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Registrar</button>
-        </div>
-      </form>
+    <form action="index.html" class="was-validated">
+
+      <div class="mb-3 mt-3">
+        <input type="text" class="form-control" id="Nombre" placeholder="Ingresa tu Nombre" name="Nombre" required>
+        <div class="valid-feedback">Completo</div>
+        <div class="invalid-feedback">Por favor rellenar campos</div>
+      </div>
+
+      <div class="mb-3">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingresa tu Correo" name="correo" aria-describedby="emailHelp" required>
+        <div class="valid-feedback">Completo</div>
+        <div class="invalid-feedback">Por favor rellenar campos</div>
+      </div>
+
+
+      <div class="mb-3">
+        <input maxlength="8" minlength="8" type="password" class="form-control" id="pwd" placeholder="Ingresa tu Contraseña" name="pswd" required pattern="[a-zA-Z]+[0-9]+">
+        <div class="valid-feedback">Completo</div>
+        <div class="invalid-feedback">Contraseña 8 caracteres, debe tener mayusculas y minusculas y numeros.</div>
+      </div>
+
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+        <label class="form-check-label" for="myCheck">Estoy de acuerdo con loso terminos y condiciones</label>
+        <div class="valid-feedback">Completo</div>
+        <div class="invalid-feedback">Haz click para continuar</div>
+      </div>
+
+
+    <button type="submit" class="btn btn-secondary">Registrar</button>
+    </form>
   </div>
-</body>
-
-
-
-
-
-
-
-
-
-
-<!-- Footer -->
-
-<footer class="text-center">
-
-  <div class="container d-none d-sm-block">
-    <div class="row ">
-      <div class="col">
-        <a class="linkfooter" href="">Contacto</a>
-      </div>
-      <div class="col">
-        <a class="linkfooter" href="">Comunidad</a>
-      </div>
-      <div class="col">
-        <a class="navbar-brand logo" href="index.html">
-          <img src="./asset/img/LOGO.png" alt="Logo" width="30" height="30" class="d-inline-block">
-        </a>
-      </div>
-      <div class="col">
-        <a class="linkfooter" href="">Ayuda</a>
-      </div>
-      <div class="col">
-        <a class="linkfooter" href="">Recursos</a>
-      </div>
-    </div>
-  </div>
-  <hr class="solid">
   
-  <!-- Grid container -->
-  <div class="container pt-4  col-lg-6 px-5">
-    <!-- Section: Social media -->
-    <section class="mb-4">
+  </body>
+  
+  
+  
+  <!-- Footer -->
+
+  <footer class="text-center">
+  
+    <div class="container d-none d-sm-block">
       <div class="row ">
         <div class="col">
-          <!-- Facebook -->
-          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-            data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+          <a class="linkfooter" href="">Contacto</a>
         </div>
         <div class="col">
-          <!-- Twitter -->
-          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-            data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+          <a class="linkfooter" href="">Comunidad</a>
         </div>
         <div class="col">
-          <!-- Google -->
-          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-            data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+          <a class="navbar-brand logo" href="index.html">
+            <img src="./asset/img/LOGO.png" alt="Logo" width="30" height="30" class="d-inline-block">
+          </a>
         </div>
         <div class="col">
-
-          <!-- Instagram -->
-          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-            data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+          <a class="linkfooter" href="">Ayuda</a>
         </div>
         <div class="col">
-          <!-- Linkedin -->
-          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-            data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <div class="col">
-          <!-- Github -->
-          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-            data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+          <a class="linkfooter" href="">Recursos</a>
         </div>
       </div>
+    </div>
+    <hr class="solid">
+    
+    <!-- Grid container -->
+    <div class="container pt-4  col-lg-6 px-5">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <div class="row ">
+          <div class="col">
+            <!-- Facebook -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="col">
+            <!-- Twitter -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+          </div>
+          <div class="col">
+            <!-- Google -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+          </div>
+          <div class="col">
+  
+            <!-- Instagram -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="col">
+            <!-- Linkedin -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <div class="col">
+            <!-- Github -->
+            <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+              data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+  
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/">GrupoCero.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+  <!-- End of .container -->
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  
+  </html>
 
-    </section>
-    <!-- Section: Social media -->
-  </div>
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center text-dark p-3" style="background-color: rgba(27, 16, 16, 0.2);">
-    © 2023 Copyright:
-    <a class="text-dark" href="https://mdbootstrap.com/">GrupoCero.com</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-
-<!-- End of .container -->
 
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-  integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-  integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
 
-</html>
