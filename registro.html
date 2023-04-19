@@ -13,8 +13,9 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/dc663d69b4.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="asset/css/style.css">
-
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
 
 <body id="principal">
 
@@ -75,116 +76,79 @@
     </div>
   </nav>
 
+ 
 
-    <!-- Perfil -->
+  <div class="title-login container mt-5  ">
+    <h3>Registro</h3>
+  </div>
 
+  <!--Login-->
 
-    <div class="row py-5 px-4">
-        <div class="col-xl-12 col-md-12 col-sm-12 mx-auto">
+  <div class="login bg-light rounded shadow-sm">
+    <form action="index.html" class="was-validated">
 
-            <!-- Profile widget -->
-            <div>
-                <div class="px-4 pt-0 pb-4">
-                    <div class="media align-items-end profile-header">
-                        <div class="profile mr-3"><img src="asset/img/artistas/escultora.png" alt="..." width="300"
-                                class="rounded mb-2 img-thumbnail">
-                        </div>
+      <div class="mb-3 mt-3">
+        <input type="text" class="form-control" id="Nombre" placeholder="Ingresa tu Nombre" name="Nombre" required>
+        <div class="valid-feedback">Completo</div>
+        <div class="invalid-feedback">Por favor rellenar campos</div>
+      </div>
 
-                        <div class="media-body mb-6">
-                            <h4 class="mt-6 mb-6">Lorenza Gaete</h4>
-                            <p class="small mb-6"> <i class="fa fa-map-marker mr-2"></i> Santiago de Chile</p>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-outline-secondary">Editar perfil</a></div>
-                        <div class="py-4">
-                            <h5 class="mb-3">Acerca de</h5>
-                            <div class="py-3 px-5 bg-light rounded shadow-sm">
-
-                                <p>Nacimiento: 8 de diciembre de 1982</p>
-                                <p>Tecnica: Escultura</p>
-                                <p>Premios: Premio Nacional de Artes Plásticas 2001/Premio Nacional de Artes
-                                    Plásticas 2019</p>
-                                <p class="descripcion mb-1">Inspirada en las manifestaciones visuales de las
-                                    emociones
-                                    humanas, me he
-                                    dedicado más de 25 años de carrera en trasparentar el aire disruptivo y orgánico
-                                    del cuerpo humano a través de la escultura, técnica que en mis palabras “une a
-                                    todas las disciplinas”: el ritmo de la música, la línea del dibujo, el color de
-                                    la pintura y la tangibilidad en la arquitectura.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="py-4 px-4">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <h5 class="mb-0">Subidos Reciente</h5><a href="#" class="btn btn-link text-muted">Mostrar
-                            todos</a>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-3 col-sm-12 mb-2 pr-lg-1"><img src="asset/img/escultura/es1/es-1-1.png"
-                                alt="" class="img-fluid rounded shadow-sm"></div>
-                        <div class="col-lg-3 col-sm-12  mb-2 pl-lg-1"><img src="asset/img/escultura/es2/es-2-1.png"
-                                alt="" class="img-fluid rounded shadow-sm"></div>
-                        <div class="col-lg-3 col-sm-12  pr-lg-1 mb-2"><img src="asset/img/escultura/es3/es-3-1.png"
-                                alt="" class="img-fluid rounded shadow-sm"></div>
-                        <div class="col-lg-3 col-sm-12  pl-lg-1"><img src="asset/img/escultura/es1/es-1-2.png" alt=""
-                                class="img-fluid rounded shadow-sm"></div>
-                    </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingresa tu Correo" name="correo" aria-describedby="emailHelp" required>
+        <div class="valid-feedback">Completo</div>
+        <div class="invalid-feedback">Por favor rellenar campos</div>
+      </div>
 
 
-                    <div class="container col-lg-6 col-sm-12 my-5">
-                        <h5 class="text-center">Subir Nueva Obra</h5>
-                        <div class="py-4 bg-light rounded shadow-sm px-3 cargaobra">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Titulo de la Obra</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Categoría</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Medidas</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="">
-                                </div>
-                            </div>
+      <div class="mb-3">
+        <input maxlength="8" minlength="8" type="password" class="form-control" id="pwd" placeholder="Ingresa tu Contraseña" name="pswd" required pattern="[a-zA-Z]+[0-9]+">
+        <div class="valid-feedback">Completo</div>
+        <div class="invalid-feedback">Contraseña debe tener 8 caracteres, mayuscula, minuscula y números.</div>
+      </div>
 
-                            <div class="input-group mb-3">
-                                <span class="input-group-text">$</span>
-                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                <span class="input-group-text">.00</span>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="formFile" class="form-label">Archivo</label>
-                                <input class="form-control" type="file" id="formFile">
-                            </div>
-
-                        </div>
-                    </div><!-- End profile widget -->
-                </div>
-            </div>
-        </div>
-    </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+        <label class="form-check-label" for="myCheck">Estoy de acuerdo con los terminos y condiciones</label>
+        <div class="valid-feedback">Completo</div>
+        <div class="invalid-feedback">Haz click para continuar</div>
+      </div>
 
 
+    <button type="submit" class="btn btn-secondary">Registrar</button>
+    </form>
+  </div>
+  
+  </body>
+  
+  
+  
+  <!-- Footer -->
 
-
-
-
-</body>
-<!-- Footer -->
-
-<footer class="text-center">
-
+  <footer class="text-center">
+  
     <div class="container d-none d-sm-block">
+      <div class="row ">
+        <div class="col">
+          <a class="linkfooter" href="">Contacto</a>
+        </div>
+        <div class="col">
+          <a class="linkfooter" href="">Comunidad</a>
+        </div>
+        <div class="col">
+          <a class="navbar-brand logo" href="index.html">
+            <img src="./asset/img/LOGO.png" alt="Logo" width="30" height="30" class="d-inline-block">
+          </a>
+        </div>
+        <div class="col">
+          <a class="linkfooter" href="">Ayuda</a>
+        </div>
+        <div class="col">
+          <a class="linkfooter" href="">Recursos</a>
         </div>
       </div>
     </div>
     <hr class="solid">
-
+    
     <!-- Grid container -->
     <div class="container pt-4  col-lg-6 px-5">
       <!-- Section: Social media -->
@@ -245,3 +209,7 @@
     integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
   
   </html>
+
+
+
+
