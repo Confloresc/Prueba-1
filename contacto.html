@@ -73,38 +73,79 @@
       </div>
     </div>
   </nav>
-  <div class="container-producto-1">
-<div class="title-login">
+
+
+
+  <div class="title-login container mt-5  ">
     <h1>CONTACTO</h1>
     <p> </p>
-    <p>¿Eres artista? Escríbenos y envíanos tu portafolio. Nosotros lo revisaremos y
-      nos pondremos en contacto contigo para que puedas participar de nuestra galería
-      de arte.En caso de consultas o requerimientos con respecto a la compra tambien
-      puedes escribirnos.</p>
+            <p>¿Eres artista? Escríbenos y envíanos tu portafolio. Nosotros lo revisaremos y
+              nos pondremos en contacto contigo para que puedas participar de nuestra galería
+              de arte.En caso de consultas o requerimientos con respecto a la compra tambien
+              puedes escribirnos.</p>
   </div>
-</div>
-  <!--Contacto-->
-<div class="login form-contact bg-light rounded shadow-sm"> 
-    <form>
-        <div class="form-row form-contact">
-          <div class="form-contact-box1 form-contact">
-            <input type="text" class="form-control form-control-contact" placeholder="Nombre">
+  
+    <!--Contacto-->
+  <div class="login bg-light rounded shadow-sm">
+    <form class="needs-validation" novalidate>
+      <div class="container">
+
+        <div class="row mb-3 mt-3">
+          <div class="col">
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu Nombre" name="nombre" required>
+            <div class="valid-feedback">
+            </div>
+            <div class="invalid-feedback">
+              Ingrese todos los datos
+            </div>
           </div>
-          <div class="form-contact-box1 form-contact">
-            <input type="text" class="form-control form-control-contact" placeholder="Apellido">
+          <div class="col">
+            <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu Apellido" name="Apellido"
+              required>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Ingrese todos los datos</div>
           </div>
-          <div class="form-contact-box2 form-contact">
-            <input type="email" class="form-control form-control-contact" placeholder="Correo">
+        </div>
+
+
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" placeholder="Ingresa tu Correo" name="correo"
+            aria-describedby="emailHelp" required>
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback">Ingrese todos los datos</div>
+        </div>
+
+
+        <div class="form-contact-box2 form-contact">
+          <p>Consulta:</p>
+          <textarea id="w3review" name="w3review" class="form-contact-box2"></textarea>
+        </div>
+           
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Enviar
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                Mensaje enviado
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
           </div>
-          <div class="form-contact-box2 form-contact">
-            <p>Consulta:</p>
-            <textarea id="w3review" name="w3review" class="form-contact-box2"></textarea>
-          </div>
-          <button type="submit" class="btn btn-secondary btn-contacto">Enviar</button>
-        </div>        
+        </div>    
     </form>
   </div>
+  </div>
+  <script src="asset/JavaScript/script.js"></script>
+
 </body>
+
 
 
 <!-- Footer -->
