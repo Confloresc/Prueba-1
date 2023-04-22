@@ -41,9 +41,9 @@ emailInput.addEventListener("input", function () {
 });
 
 passwordInput.addEventListener("input", function () {
-  if (passwordInput.validity.patternMismatch) {
+  if (!regex.test(password)) {
     passwordInput.setCustomValidity(
-      "La contraseña debe tener 8 caracteres, mayuscula, minuscula y números"
+      "Contraseña debe tener 8 caracteres, mayuscula, minuscula y números."
     );
   } else {
     passwordInput.setCustomValidity("");
@@ -51,6 +51,7 @@ passwordInput.addEventListener("input", function () {
 });
 
 checkInput.addEventListener("click", function () {
+  const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8}$/;
   if (checkInput.checked) {
     checkInput.setCustomValidity("");
   } else {
