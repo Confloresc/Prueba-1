@@ -81,14 +81,16 @@
 
   <!--Login-->
   <div class="login bg-light rounded shadow-sm">
-    <form>
+    <form id="loginForm">
       <div class="mb-3">
 
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo"
+        <input type="email" class="form-control" id="email1" placeholder="Correo"
           aria-describedby="emailHelp">
+          <p id="name-error"></p>
       </div>
       <div class="mb-3">
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+        <input type="password" class="form-control" id="password1" placeholder="Contraseña">
+        <p id="password-error"></p>
       </div>
       <button type="submit" class="btn btn-primary btn-login">Login</button>
     </form>
@@ -179,5 +181,6 @@
   integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
   integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="asset/js/login.js"></script>
 </html>
