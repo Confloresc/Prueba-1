@@ -160,7 +160,12 @@ hr.solid {
 }
 
 
-
+#btn-effect:hover {
+  background-color: #777;
+}
+#btn-effect:active {
+  background-color: #333;
+}
 
 
  @media only screen and (max-width: 768px) {
