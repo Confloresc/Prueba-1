@@ -164,6 +164,7 @@ hr.solid {
     background-color: #333;
   }
 }
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
 
@@ -171,4 +172,20 @@ hr.solid {
   .sub-container-producto-2 {
     width: 100%;
   }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #f3f3f3;
+  border-top-color: #000;
+  border-radius: 50%;
+  animation: spinner 0.8s linear infinite;
 }
