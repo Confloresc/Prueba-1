@@ -22,7 +22,6 @@ const nombreInput = document.getElementById("nombre");
 const apellidoInput = document.getElementById("apellido");
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("pwd");
-const checkInput = document.getElementById("myCheck");
 
 nombreInput.addEventListener("input", function () {
   const regex = /^[A-Za-z]+$/;
