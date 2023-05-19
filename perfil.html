@@ -157,8 +157,8 @@
               </div>
 
               <div class="input-group mb-3">
-                <span class="input-group-text">$</span>
-                <input type="monto" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text">CLP</span>
+                <input type="monto" class="form-control" id="monto" placeholder="">
                 <span class="input-group-text">.00</span>
               </div>
 
@@ -171,6 +171,19 @@
                   <span id="button-text">Subir Archivo</span>
                   <span id="button-loader" class="loader"></span>
                 </button>
+                <div id="archivoCargadoModal" class="modal" tabindex="-1">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Archivo Cargado</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <p>El archivo se ha cargado exitosamente.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
 
 
