@@ -1,3 +1,13 @@
+if (window.jQuery) {
+  // jQuery está vinculado correctamente
+  console.log("jQuery está vinculado correctamente en esta página.");
+} else {
+  // jQuery no está vinculado o no se ha cargado correctamente
+  console.log(
+    "jQuery no está vinculado o no se ha cargado correctamente en esta página."
+  );
+}
+
 const form = document.querySelector(".needs-validation");
 
 form.addEventListener("submit", function (event) {
@@ -12,7 +22,6 @@ const nombreInput = document.getElementById("nombre");
 const apellidoInput = document.getElementById("apellido");
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("pwd");
-const checkInput = document.getElementById("myCheck");
 
 nombreInput.addEventListener("input", function () {
   const regex = /^[A-Za-z]+$/;
