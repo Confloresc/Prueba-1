@@ -1,22 +1,19 @@
-if (window.jQuery) {
-  // jQuery está vinculado correctamente
-  console.log("jQuery está vinculado correctamente en esta página.");
-} else {
-  // jQuery no está vinculado o no se ha cargado correctamente
-  console.log(
-    "jQuery no está vinculado o no se ha cargado correctamente en esta página."
-  );
-}
+$(document).ready(function () {
+  $("#boton").on("click", function () {
+    var buttonLoader = this.querySelector("#button-loader");
+    var buttonText = this.querySelector("#button-text");
 
-document.querySelector(".carga").addEventListener("click", function (event) {
-  event.preventDefault();
-  var button = event.target;
-  button.disabled = true;
-  button.innerHTML = '<span class="loading"></span> Cargando...';
+    // Muestra el efecto de carga
+    buttonLoader.style.display = "inline-block";
 
-  // Simular una carga de 3 segundos
-  setTimeout(function () {
-    button.disabled = false;
-    button.innerHTML = "Subir Archivo";
-  }, 3000);
+    // Deshabilita el botón mientras se realiza la carga
+    this.disabled = true;
+
+    setTimeout(function () {
+      buttonLoader.style.display = "none";
+
+      // Habilita el botón nuevamente
+      $("#boton").prop("disabled", false);
+    }, 1000);
+  });
 });
