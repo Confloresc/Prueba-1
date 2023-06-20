@@ -13,7 +13,8 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/dc663d69b4.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="asset/css/style.css">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body id="principal">
@@ -67,115 +68,70 @@
 
           <a class="navbar-brand Carro" href="./index.html">
             <img src="./asset/img/carrito.png" alt="Carro" width="35" height="35" class="d-inline-block">
-             
+
           </a>
         </nav>
       </div>
     </div>
   </nav>
 
- 
-<div class="container-producto-1">
-  <div class="sub-container-producto-1">
-  <!--Carrusel-->
 
-  <div id="carouselExampleFade" class="carousel slide carousel-fade">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="asset/img/pintura/p3/p3 principal.png" class="d-block w-100" alt="...">
-        
-      </div>
-      <div class="carousel-item">
-        <img src="asset/img/pintura/p3/p3-1.png" class="d-block w-100" alt="...">
-        
-      </div>
-     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+
+  <div class="title-login container mt-5  ">
+    <h3>Registro</h3>
+  </div>
+  <!--Formulario de registro-->
+  <div class="login bg-light rounded shadow-sm">
+    <form class="needs-validation" novalidate>
+      <div class="container">
+        <p>Ingrese todos los datos en el siguiente formulario para registro</p>
+        <div class="row mb-3 mt-3">
+          <div class="col">
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu Nombre" name="nombre" required>
+            <div class="valid-feedback">
+            </div>
+            <div class="invalid-feedback">Por favor ingresar un nombre valido</div>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu Apellido" name="Apellido"
+              required>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Por favor ingresar un apellido valido</div>
+          </div>
+        </div>
+
+
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" placeholder="Ingresa tu Correo" name="correo" required>
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback">Por favor ingresar un correo electrónico válido
+          </div>
+        </div>
+
+
+        <div class="mb-3">
+          <input maxlength="8" minlength="8" type="password" class="form-control" id="pwd"
+            placeholder="Ingresa tu Contraseña" name="pswd" required pattern="[a-zA-Z]+[0-9]+">
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback">Contraseña debe tener 8 caracteres, mayuscula, minuscula y números.</div>
+        </div>
+
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+          <label class="form-check-label" for="myCheck">Estoy de acuerdo con los terminos y condiciones</label>
+          <div class="valid-feedback">Completo</div>
+          <div class="invalid-feedback">Haz click para continuar</div>
+        </div>
+
+
+        <button type="submit" class="btn btn-secondary">Registrar</button>
+    </form>
   </div>
   </div>
-
-  <div class="sub-container-producto-2">
-    <table class="table">
-      <h4> MAPAS DACTILARES </h4>
-        <thead>
-          <tr>
-            <th scope="col" colspan="2">Detalle del Producto</th>
-            <th scope="col"></th>                
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Autor:</th>
-            <td>Lucy Graham</td>                
-          </tr>
-          <tr>
-            <th scope="row">Año:</th>
-            <td>2023</td>                
-          </tr>
-          <tr>
-            <th scope="row">Categoria:</th>
-            <td>Acrilico</td>                
-          </tr>
-          <tr>
-            <th scope="row">Valor:</th>
-            <td>$65.000</td>
-          </tr>
-          <tr>
-            <th scope="row">Descripción:</th>
-            <td>Pintura inspirada en las huellas dactilares de la naturaleza y del ser humano.
-            </td>
-          </tr>              
-        </tbody>
-      </table>
-      <a href="./pinturas.html" type="button" class="btn btn-outline-secondary">VOLVER</a>
-      <button id="btn-effect" type="submit" class="btn btn-secondary">Agregar al Carro</button>  
-</div>
-
-</div>
-
-
-<div class="container-producto-1">
-
-<div class="title-producto">
-    <h3>OTRAS OBRAS</h3>
-
-</div>
-
-
-    <div class="sub-container-img">
-        <div class="sub-container-img-1">
-          <a href="./pintura1.html">
-            <img src="asset/img/pintura/p1/p1 principal.png" class="img-fluid img-producto-1">
-          </a>
-        </div>
-        <div class="sub-container-img-1">
-          <a href="./tejido3.html">
-            <img src="asset/img/tejido/tejido 3/t3-1.png" class="img-fluid img-producto-1">
-          </a>
-        </div>
-        <div class="sub-container-img-1">
-          <a href="./escultura2.html">
-            <img src="asset/img/escultura/es2/es-2-2.png" class="img-fluid img-producto-1">
-          </a>
-        </div>
-        <div class="sub-container-img-1">
-          <a href="./escultura3.html">
-            <img src="asset/img/escultura/es3/es-3-2.png" class="img-fluid img-producto-1">
-          </a>
-        </div>
-
-    </div>
-    
-</div>
+  <script src="asset/JavaScript/script.js"></script>
 
 </body>
+
 
 <!-- Footer -->
 
@@ -203,7 +159,7 @@
     </div>
   </div>
   <hr class="solid">
-  
+
   <!-- Grid container -->
   <div class="container pt-4  col-lg-6 px-5">
     <!-- Section: Social media -->
@@ -262,9 +218,5 @@
   integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
   integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.7.0.min.js"
-  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-  crossorigin="anonymous"></script>
-  <script src="asset/JavaScript/btn.js" type="text/JavaScript"></script>
+
 </html>
